@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080 initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Mono">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/agregar-tareas.css">
+    <link rel="icon" href="images/icon.png">
+    <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
+    <title>Do-iT</title>
+</head>
+
+<body>
+    <header>
+        <div class="barra-color">
+        </div>
+        <nav>
+            <div class="nav-madre" id="nav">
+                <div class="nav-A">
+                    <img src="images/logo01.png" id="logo" href="P01-homepage.html">
+                </div>
+            </div>
+            <div class="barra-color2">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="madre-espaciadores">
+            <div id="espaciador-izq"></div>
+            <div id="contenedor-main">
+                <section class="titulo">
+                    <h1>Modificar tarea</h1>
+                </section>
+
+                <form class="formulario">
+
+                    <div>
+                        <label for="txt-fecha" id="texto-gris" class="label">Fecha</label>
+                        <div>
+                        <input class="input-formularios" id="txt-fecha" type="date" placeholder="Fecha">
+                    </div>
+                    </div>
+
+                    <div>
+                        <label for=txt-nombre class="label">Nombre</label>
+                        <div>
+                        <input class="input-formularios" id="txt-nombre" type="text" placeholder="Nombre">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="txt-descripcion" class="label invisible">Descripción</label>
+                        <div>
+                            <textarea class="input-formlularios-textarea" id="txt-descripcion" placeholder="Descripción"></textarea>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="txt-prioridad" id="texto-gris" class="label">Prioridad</label>
+                        <div>
+                            <select class="input-formularios" id="txt-prioridad">
+                                <option value=""></option>
+                                <option value="Alta">Alta</option>
+                                <option value="Media">Media</option>
+                                <option value="Baja">Baja</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="txt-encargado" id="texto-gris" class="label">Encargado</label>
+                        <div>
+                            <select class="input-formularios" id="txt-encargado">
+                                <option value=""></option>
+                                <option value="Encargado 01">Encargado 01</option>
+                                <option value="Encargado 02">Encargado 02</option>
+                                <option value="Encargado 03">Encargado 03</option>
+                                <option value="Encargado 04">Encargado 04</option>
+                                <option value="Encargado 05">Encargado 05</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn" id="btn-agregar" type=button>Modificar </button>
+                        <button class="btn" id="btn-cancelar" type=button>Cancelar</button>
+                    </div>
+
+                </form>
+
+            </div>
+            </section>
+            <div id="espaciador-der"></div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="foot-madre">
+            <div class="foot-A">
+                <h5>Un proyecto desarrollado en 1 día</h5>
+                <img src="images/logo04.png" class="imagen-footer">
+            </div>
+            <div class="foot-B">
+                <a class="btn-sochi">Contacto</a>
+                <ul class="lista">
+                    <li>WhatsApp</li>
+                    <li class="italica">8560-4977</li>
+                    <li class="italica">eduardo020790@gmail.com.com</li>
+                </ul>
+            </div>
+            <div class="foot-C">
+                <h5>Sonríe</h5>
+                <div>
+                    <img src="images/smile.png" class="imagen-footer">
+                </div>
+            </div>
+        </div>
+        <section class="divisor2">
+            <a id="desarrollado">
+                Desarrollado por Eduardo Romaguera S. Derechos Reservados.
+            </a>
+        </section>
+    </footer>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts/modificar-tareas.js"></script>
+
+</body>
+</html>

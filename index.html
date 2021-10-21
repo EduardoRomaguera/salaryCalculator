@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080 initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Mono">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="images/icon.png">
+    <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
+    <title>Do-iT</title>
+</head>
+
+<body>
+    <header>
+        <div class="barra-color">
+        </div>
+        <nav>
+            <div class="nav-madre" id="nav">
+                <div class="nav-A">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <img src="images/logo01.png" id="logo" href="P01-homepage.html">
+                </div>
+            </div>
+            <div class="barra-color2">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="madre-espaciadores">
+            <div id="espaciador-izq"></div>
+            <div id="contenedor-main">
+
+                <section class="titulo">
+                    <h1>Tareas pendientes</h1>
+                </section>
+                <section class="catalogos">
+                    <section>
+
+                        <div class='filtro'>
+                            <label class="filtro" for='txt-filtro'>Buscar tarea</label>
+                            <div>
+                                <input class="input-formularios" type="text" id='txt-filtro'>
+                            </div>
+                            <div>
+                                <button class="btn" id="btn-agregar" type=button>Agregar tarea </button>
+                            </div>
+
+                        </div>
+
+                        <div class="contenedor1">
+
+                            <table id="tbl-tareas" class="tabla">
+                                <thead>
+                                    <tr>
+                                        <th>Fecha</th>
+                                        <th>Nombre</th>
+                                        <th>Prioridad</th>
+                                        <th>Encargado</th>
+                                        <th>Descripción</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </section>
+
+
+                </section>
+
+            </div>
+            </section>
+            <div id="espaciador-der"></div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="foot-madre">
+            <div class="foot-A">
+                <h5>Un proyecto desarrollado en 1 día</h5>
+                <img src="images/logo04.png" class="imagen-footer">
+            </div>
+            <div class="foot-B">
+                <a class="btn-sochi">Contacto</a>
+                <ul class="lista">
+                    <li>WhatsApp</li>
+                    <li class="italica">8560-4977</li>
+                    <li class="italica">eduardo020790@gmail.com.com</li>
+                </ul>
+            </div>
+            <div class="foot-C">
+                <h5>Sonríe</h5>
+                <div>
+                    <img src="images/smile.png" class="imagen-footer">
+                </div>
+            </div>
+        </div>
+        <section class="divisor2">
+            <a id="desarrollado">
+                Desarrollado por Eduardo Romaguera S. Derechos Reservados.
+            </a>
+        </section>
+    </footer>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts/index.js"></script>
+
+</body>
+</html>
