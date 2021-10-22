@@ -7,112 +7,90 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:500,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Mono">
-    <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="icon" href="images/icon.png">
+    <link rel="icon" href="images/icon.jpg">
     <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
-    <title>Do-iT</title>
+    <title>Calculadora salarial</title>
 </head>
 
 <body>
     <header>
-        <div class="barra-color">
-        </div>
-        <nav>
-            <div class="nav-madre" id="nav">
-                <div class="nav-A">
-                    <i class="fas fa-money-bill-wave"></i>
-                    <img src="images/logo01.png" id="logo" href="P01-homepage.html">
-                </div>
-            </div>
-            <div class="barra-color2">
-            </div>
-        </nav>
-    </header>
 
+    </header>
+    
     <main>
         <div id="madre-espaciadores">
-            <div id="espaciador-izq"></div>
-            <div id="contenedor-main">
+            <div id="espaciador-izq">
+                <div><img src="/images/icon.jpg" id="mainIcon" alt="money icon"></div>
+                <div id="mainTitle">Calculadora salarial</div>
+            </div>
 
-                <section class="titulo">
-                    <h1>Tareas pendientes</h1>
-                </section>
-                <section class="catalogos">
-                    <section>
+            <div id="espaciador-der">
+            <form">
 
-                        <div class='filtro'>
-                            <label class="filtro" for='txt-filtro'>Buscar tarea</label>
-                            <div>
-                                <input class="input-formularios" type="text" id='txt-filtro'>
-                            </div>
-                            <div>
-                                <button class="btn" id="btn-agregar" type=button>Agregar tarea </button>
-                            </div>
 
+
+
+
+                    <div class="container1">
+                        
+                        <div class="container2">
+                            <label for="txtSalarioInput"><b>Salario bruto</b></label>
+                            <label for="txtAsociacionSInput"><b>Porcentaje de asamblea solidarista</b></label>
+                            <label for="txtOtroInput"><b>Otras deducciones netas</b></label>
+                            <label for="txtOtroInput"><b></b></label>
+                            <label for="txtCCSSSEM"><b>CCSS Enfermedad y maternidad</b></label>
+                            <label for="txtCCSSIVM"><b>CCSS Invalidez, vejez y muerte</b></label>
+                            <label for="txtBP"><b>Aporte al Banco Popular</b></label>
+                            <label for="txtAsociacionS"><b>Asociación solidarista</b></label>
+                            <label for="txtOtro"><b>Otras deducciones netas</b></label>
+                            <label for="txtImpuesto"><b>Impuesto de la renta</b></label>
+                            <label for="txtTotal"><b>Total de deducciones</b></label>
+                            <label id="labeltxtSalarioNeto" for="txtSalarioNeto"><b>Salario neto</b></label>
                         </div>
+    
+                        <div class="container3">
+                            
 
-                        <div class="contenedor1">
+                            <input class="test" type="text" placeholder="Salario bruto" name="txtSalarioInput" id="txtSalarioInput" required>
 
-                            <table id="tbl-tareas" class="tabla">
-                                <thead>
-                                    <tr>
-                                        <th>Fecha</th>
-                                        <th>Nombre</th>
-                                        <th>Prioridad</th>
-                                        <th>Encargado</th>
-                                        <th>Descripción</th>
-                                        <th>Acciones</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                </tbody>
-                            </table>
-
+                            <input type="text" placeholder="0%" name="txtAsociacionSInput" id="txtAsociacionSInput" required>
+    
+                            <input type="text" placeholder="0" name="txtOtroInput" id="txtOtroInput" required disabled>  
+    
+                            <button id="btnPost">Calcular</button>
+                            <input type="text" placeholder="" name="txtCCSSSEM" id="txtCCSSSEM" required readonly>  
+    
+                            <input type="text" placeholder="" name="txtCCSSIVM" id="txtCCSSIVM" required readonly>  
+    
+                            <input type="text" placeholder="" name="txtBP" id="txtBP" required readonly>  
+    
+                            <input type="text" placeholder="" name="txtAsociacionS" id="txtAsociacionS" required readonly>  
+    
+                            <input type="text" placeholder="" name="txtOtro" id="txtOtroSInput" required readonly>  
+    
+                            <input type="text" placeholder="" name="txtImpuesto" id="txtImpuesto" required readonly>  
+    
+                            <input type="text" placeholder="" name="txtTotal" id="txtTotal" required readonly>
+    
+                            <input type="text" placeholder="" name="txtSalarioNeto" id="txtSalarioNeto" required readonly>  
                         </div>
-                    </section>
+                        <a href="https://eromaguera.com">eromaguera.com</a>
+                    </div>
 
 
-                </section>
+                </form>
 
             </div>
-            </section>
-            <div id="espaciador-der"></div>
         </div>
     </main>
 
-
     <footer>
-        <div class="foot-madre">
-            <div class="foot-A">
-                <h5>Un proyecto desarrollado en 1 día</h5>
-                <img src="images/logo04.png" class="imagen-footer">
-            </div>
-            <div class="foot-B">
-                <a class="btn-sochi">Contacto</a>
-                <ul class="lista">
-                    <li>WhatsApp</li>
-                    <li class="italica">8560-4977</li>
-                    <li class="italica">eduardo020790@gmail.com.com</li>
-                </ul>
-            </div>
-            <div class="foot-C">
-                <h5>Sonríe</h5>
-                <div>
-                    <img src="images/smile.png" class="imagen-footer">
-                </div>
-            </div>
-        </div>
-        <section class="divisor2">
-            <a id="desarrollado">
-                Desarrollado por Eduardo Romaguera S. Derechos Reservados.
-            </a>
-        </section>
     </footer>
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/index.js"></script>
 
 </body>
