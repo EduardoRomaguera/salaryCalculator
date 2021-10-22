@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "98011c09-5a46-4ca8-819c-a8f2d5686165",
+		"name": "ServerlessChallengeGAP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cloud",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"salary\": 5000000,\r\n    \"sAssociation\": 0,\r\n    \"others\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://httpfunction20211014192914.azurewebsites.net/api/function1",
+					"protocol": "https",
+					"host": [
+						"httpfunction20211014192914",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"function1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Eduardo",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
